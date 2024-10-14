@@ -5,7 +5,7 @@ namespace FactoryPattern.Services;
 
 public class AdvancedErrorsDisplayer : IErrorsDisplayer
 {
-    public void Write(IReadOnlyList<Error> errors)
+    public void Display(IReadOnlyList<Error> errors)
     {
         for (var i = 0; i < errors.Count; i++)
         {

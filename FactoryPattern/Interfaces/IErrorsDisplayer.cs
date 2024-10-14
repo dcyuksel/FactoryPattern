@@ -3,5 +3,5 @@
 namespace FactoryPattern.Interfaces;
 public interface IErrorsDisplayer
 {
-    void Write(IReadOnlyList<Error> errors);
+    void Display(IReadOnlyList<Error> errors);
 }

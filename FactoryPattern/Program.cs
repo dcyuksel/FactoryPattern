@@ -27,14 +27,14 @@ static void Run(IServiceProvider hostProvider)
     var errors = new List<Error> { new("ABC1", "This is a error text."), new("ABC2", "Put something to show."), new("ABC3", "More error text.") };
 
     Console.WriteLine("Basic:");
-    factory.Create(FactoryPattern.ErrorDisplayerType.Basic).Write(errors);
+    factory.Create(FactoryPattern.ErrorDisplayerType.Basic).Display(errors);
     Console.WriteLine();
 
     Console.WriteLine("Pretty:");
-    factory.Create(FactoryPattern.ErrorDisplayerType.Pretty).Write(errors);
+    factory.Create(FactoryPattern.ErrorDisplayerType.Pretty).Display(errors);
     Console.WriteLine();
 
     Console.WriteLine("Advanced:");
-    factory.Create(FactoryPattern.ErrorDisplayerType.Advanced).Write(errors);
+    factory.Create(FactoryPattern.ErrorDisplayerType.Advanced).Display(errors);
     Console.WriteLine();
 }
